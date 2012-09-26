@@ -3,14 +3,19 @@ Pequeño cliente que muestra el funcionamiento del protocolo SMTP con autenticac
 Para que funcione correctamente hay que modificar las siguientes líneas
 
 //char *host_id="65.55.172.254"; //hotmail también puede ser "smtp.live.com"
+
 char *host_id="smtp.gmail.com"; //gmail
+
 //char *host_id="smtp.um.es"; //Universidad de Murcia
-//TODO
-//Implementar métodos de encode y decode en base64
+
 char *from_id="AQUI EL CORREO EN BASE64";
+
 char *password="AQUI LA PASSWORD EN BASE64";
+
 char *to_id="CORREO DEL DESTINATARIO sin base64";
+
 char *asunto="Prueba\r\n";
+
 char cuerpo[100]="CORREO\r\n";
 
  - Esto es, elegir que servidor vamos a usar (Hotmail, Gmail, Universidad de Murcia, etc) comentando o descomentando las líneas de código
@@ -18,6 +23,8 @@ char cuerpo[100]="CORREO\r\n";
  - En password vuestra contraseña en base64
  - En to_id hacia la persona ala que va dirigida el correo (sin base64)
  - Y el asunto y el cuerpo del mensaje
+
+Para códificar y decodificar en base64 puede verse: http://base64-encoder-online.waraxe.us/
 
 Para compilarlo basta ejecutar
 
